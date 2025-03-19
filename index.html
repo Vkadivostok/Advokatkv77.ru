@@ -25,6 +25,11 @@
             padding: 20px;
             text-align: center;
         }
+        header nav a {
+            color: #fff; /* Измененный цвет текста */
+            text-decoration: none; /* Убираем подчеркивание */
+            margin: 0 15px; /* Добавляем отступы */
+        }
         .container {
             width: 80%;
             margin: 20px auto;
@@ -97,6 +102,40 @@
             color: #4CAF50;
             font-weight: bold;
         }
+
+        /* Стили для формы обратной связи */
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый фон */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container input, .form-container textarea {
+            background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный белый фон для полей */
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Тонкая белая граница */
+        }
+
+        .form-container button {
+            background-color: #4CAF50;
+            transition: background-color 0.3s ease; /* Плавный переход цвета при наведении */
+        }
+
+        .form-container button:hover {
+            background-color: #45a049; /* Более темный зеленый при наведении */
+        }
+
+        .form-container input:focus, .form-container textarea:focus {
+            outline: none; /* Убираем стандартный фокус */
+            border-color: #4CAF50; /* Зеленая граница при фокусе */
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Небольшая тень при фокусе */
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ddd;
+        }
     </style>
 </head>
 <body>
@@ -105,6 +144,7 @@
         <nav>
             <a href="index.html">Главная</a>
             <a href="secondary.html">Срочный выезд</a>
+            <a href="consultation.html">Бесплатная консультация</a>
         </nav>
     </header>
     <div class="container">
@@ -120,7 +160,7 @@
             <p>
                 <span class="highlight">Кража:</span> Защита по делам о кражах требует глубокого анализа доказательств и обстоятельств дела. Я тщательно изучаю материалы дела, выявляю нарушения и строю эффективную стратегию защиты.
                 <span class="highlight">Разбой:</span> Дела о разбое требуют особого внимания к деталям и доказательствам. Я обеспечиваю защиту на всех этапах уголовного процесса, от задержания до суда.
-                <span class="highlight">Мошенничество:</span> Защита по делам о мошенничестве требует знания гражданского и уголовного права. Я анализирую финансовые документы и строю защиту на основе законных интересов клиента.
+                <span class="highlight">Мошенничество:</span> Защита по делам о мошенничестве требует знания гражданского и уголовного права. Я анализирую финансовые документы и обстоятельства дела, чтобы защитить интересы клиента.
                 <span class="highlight">Незаконный оборот наркотических средств:</span> Дела о наркотиках требуют особого внимания к процессуальным нормам и экспертизам. Я обеспечиваю защиту на всех этапах уголовного процесса.
                 <span class="highlight">Незаконная организация и проведение азартных игр:</span> Защита по делам о незаконных азартных играх требует знания законодательства и опыта в защите по экономическим преступлениям.
             </p>
@@ -136,16 +176,19 @@
             </p>
         </div>
         <div class="section">
-            <img src="https://github.com/Vkadivostok/Moskow/blob/main/images/konsultacia.png?raw=true" alt="
-Бесплатная консультация</h2>
+            <img src="https://github.com/Vkadivostok/Moskow/blob/main/images/konsultacia.png?raw=true" alt="Бесплатная консультация">
+            <h2>Бесплатная консультация</h2>
             <p>Получите бесплатную консультацию по вашему вопросу. Заполните форму, и я свяжусь с вами в ближайшее время.</p>
         </div>
         <div class="form-container">
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="95a43b5a-745b-4a3b-be39-d055b13df101">
-                <input type="text" name="name" placeholder="ФИО" required>
-                <input type="tel" name="phone" placeholder="Номер телефона">
-                <textarea name="message" placeholder="Сообщение" rows="5" required></textarea>
+                <label for="name">ФИО</label>
+                <input type="text" name="name" id="name" placeholder="Введите ваше ФИО" required>
+                <label for="phone">Номер телефона</label>
+                <input type="tel" name="phone" id="phone" placeholder="Введите ваш номер телефона">
+                <label for="message">Сообщение</label>
+                <textarea name="message" id="message" placeholder="Введите ваше сообщение" rows="5" required></textarea>
                 <div style="display: flex; align-items: center; margin-bottom: 15px;">
                     <label for="captcha">Введите сумму: 2 + 3 = </label>
                     <input type="text" id="captcha" name="captcha" style="width: 50px;" required>
@@ -174,23 +217,23 @@
         </div>
     </div>
     <footer>
-        <p>&copy; 2024 Адвокат Козлов Владимир Михайлович</p>
+        <p>&copy; 2025 Адвокат Козлов Владимир Михайлович</p>
     </footer>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=682f1796-35fb-475b-9578-a0081d2255b2&lang=ru_RU"></script>
     <script>
         ymaps.ready(function () {
             var myMap = new ymaps.Map('map', {
-                    center: [55.735234, 37.621350],
-                    zoom: 16
-                }, {
-                    searchControlProvider: 'yandex#search'
-                }),
-                myPlacemark = new ymaps.Placemark([55.735234, 37.621350], {
-                    balloonContent: 'г. Москва, ул. Малая Ордынка ул., 5/6, офис 26'
-                }, {
-                    preset: 'islands#icon',
-                    iconColor: '#0095b6'
-                });
+                center: [55.735234, 37.621350],
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
+            myPlacemark = new ymaps.Placemark([55.735234, 37.621350], {
+                balloonContent: 'г. Москва, ул. Малая Ордынка ул., 5/6, офис 26'
+            }, {
+                preset: 'islands#icon',
+                iconColor: '#0095b6'
+            });
             myMap.geoObjects.add(myPlacemark);
         });
     </script>
