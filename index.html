@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Адвокат Козлов Владимир Михайлович - срочный выезд, консультации, уголовные дела</title>
     <meta name="description" content="Адвокат Козлов Владимир Михайлович: срочный выезд по Москве, бесплатные онлайн-консультации, ведение уголовных дел. Опыт 15 лет.">
     <meta name="keywords" content="адвокат Москва, срочный выезд адвоката, бесплатная юридическая консультация онлайн, уголовный адвокат, кража, разбой, мошенничество, наркотики, азартные игры">
+    <title>Адвокат Козлов Владимир Михайлович - срочный выезд, консультации, уголовные дела</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://github.com/Vkadivostok/Moskow/blob/main/images/fon%20sero%20cherni.jpg?raw=true');
+            background-image: url('https://raw.githubusercontent.com/Vkadivostok/Moskow/main/images/fon%20sero%20cherni.jpg');
             background-size: cover;
             background-attachment: fixed;
             color: #fff;
             line-height: 1.6;
         }
         header {
-            background-image: url('https://github.com/Vkadivostok/Moskow/blob/main/images/%D0%A8%D0%B0%D0%BF%D0%BA%D0%B0%20%D0%B3%D0%B5%D1%80%D0%B1.jpg?raw=true');
+            background-image: url('https://raw.githubusercontent.com/Vkadivostok/Moskow/main/images/%D0%A8%D0%B0%D0%BF%D0%BA%D0%B0%20%D0%B3%D0%B5%D1%80%D0%B1.jpg');
             background-size: cover;
             background-position: center;
             padding: 20px;
             text-align: center;
         }
         header nav a {
-            color: #fff; /* Измененный цвет текста */
-            text-decoration: none; /* Убираем подчеркивание */
-            margin: 0 15px; /* Добавляем отступы */
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
         }
         .container {
             width: 80%;
@@ -45,6 +45,8 @@
         .section img {
             max-width: 300px;
             border-radius: 10px;
+            margin: 20px auto;
+            display: block;
         }
         .section h2 {
             color: #4CAF50;
@@ -53,23 +55,12 @@
         .lawyer-photo {
             max-width: 200px;
             border-radius: 50%;
-            margin: 20px auto;
-            display: block;
-        }
-        .contact-info {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .contact-info p {
-            margin: 10px 0;
-        }
-        .map {
-            width: 100%;
-            height: 400px;
-            border-radius: 10px;
-            margin-top: 20px;
         }
         .form-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             width: 50%;
             margin: 20px auto;
             text-align: left;
@@ -78,9 +69,9 @@
             width: calc(100% - 22px);
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
+            border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 5px;
-            background-color: #333;
+            background-color: rgba(255, 255, 255, 0.2);
             color: #fff;
         }
         .form-container button {
@@ -90,9 +81,29 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+        .form-container input:focus, .form-container textarea:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ddd;
+        }
+        .map {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            margin-top: 20px;
         }
         footer {
-            background-image: url('https://github.com/Vkadivostok/Moskow/blob/main/images/ban.jpg?raw=true');
+            background-image: url('https://raw.githubusercontent.com/Vkadivostok/Moskow/main/images/ban.jpg');
             background-size: cover;
             padding: 20px;
             text-align: center;
@@ -102,39 +113,12 @@
             color: #4CAF50;
             font-weight: bold;
         }
-
-        /* Стили для формы обратной связи */
-        .form-container {
-            background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый фон */
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .form-container input, .form-container textarea {
-            background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный белый фон для полей */
-            border: 1px solid rgba(255, 255, 255, 0.3); /* Тонкая белая граница */
-        }
-
-        .form-container button {
-            background-color: #4CAF50;
-            transition: background-color 0.3s ease; /* Плавный переход цвета при наведении */
-        }
-
-        .form-container button:hover {
-            background-color: #45a049; /* Более темный зеленый при наведении */
-        }
-
-        .form-container input:focus, .form-container textarea:focus {
-            outline: none; /* Убираем стандартный фокус */
-            border-color: #4CAF50; /* Зеленая граница при фокусе */
-            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Небольшая тень при фокусе */
-        }
-
-        .form-container label {
-            display: block;
-            margin-bottom: 5px;
-            color: #ddd;
+        @media (max-width: 768px) {
+            .container { width: 90%; padding: 10px; }
+            .form-container { width: 90%; }
+            .section img, .lawyer-photo { max-width: 150px; }
+            h2 { font-size: 1.2em; }
+            header nav a { display: block; margin: 10px 0; }
         }
     </style>
 </head>
@@ -148,38 +132,33 @@
         </nav>
     </header>
     <div class="container">
-        <div class="section">
-            <img src="https://github.com/Vkadivostok/Moskow/blob/main/images/Picsart_25-03-18_22-26-35-604.png?raw=true" alt="Фото адвоката" class="lawyer-photo animate__animated animate__fadeIn">
+        <section class="section">
+            <img src="https://raw.githubusercontent.com/Vkadivostok/Moskow/main/images/Picsart_25-03-18_22-26-35-604.png" alt="Фото адвоката" class="lawyer-photo animate__animated animate__fadeIn" onerror="this.src='local-image.jpg';">
             <h2>Обо мне</h2>
-            <p>Козлов Владимир Михайлович - опытный адвокат с 15-летним стажем, специализирующийся на уголовных делах. Готов оказать срочную юридическую помощь в Москве, провести бесплатные онлайн-консультации и защитить ваши права в суде.</p>
-        </div>
-        <div class="section">
-            <img src="https://github.com/Vkadivostok/Moskow/blob/main/images/Femida.png?raw=true" alt="Уголовные дела">
+            <p>Козлов Владимир Михайлович - опытный адвокат с 15-летним стажем, специализирующийся на уголовных делах. Готов оказать <span class="highlight">срочную юридическую помощь</span> в Москве, провести бесплатные онлайн-консультации и защитить ваши права в суде.</p>
+        </section>
+        <section class="section">
+            <img src="https://raw.githubusercontent.com/Vkadivostok/Moskow/main/images/Femida.png" alt="Уголовные дела" onerror="this.src='local-image.jpg';">
             <h2>Уголовные дела</h2>
             <p>Специализируюсь на защите по уголовным делам, включая кражи, разбои, мошенничество, незаконный оборот наркотических средств и организацию азартных игр. Имею успешный опыт защиты клиентов в судах Москвы.</p>
             <p>
-                <span class="highlight">Кража:</span> Защита по делам о кражах требует глубокого анализа доказательств и обстоятельств дела. Я тщательно изучаю материалы дела, выявляю нарушения и строю эффективную стратегию защиты.
-                <span class="highlight">Разбой:</span> Дела о разбое требуют особого внимания к деталям и доказательствам. Я обеспечиваю защиту на всех этапах уголовного процесса, от задержания до суда.
-                <span class="highlight">Мошенничество:</span> Защита по делам о мошенничестве требует знания гражданского и уголовного права. Я анализирую финансовые документы и обстоятельства дела, чтобы защитить интересы клиента.
-                <span class="highlight">Незаконный оборот наркотических средств:</span> Дела о наркотиках требуют особого внимания к процессуальным нормам и экспертизам. Я обеспечиваю защиту на всех этапах уголовного процесса.
-                <span class="highlight">Незаконная организация и проведение азартных игр:</span> Защита по делам о незаконных азартных играх требует знания законодательства и опыта в защите по экономическим преступлениям.
+                <span class="highlight">Кража:</span> Защита по делам о кражах требует глубокого анализа доказательств и обстоятельств дела.<br>
+                <span class="highlight">Разбой:</span> Дела о разбое требуют особого внимания к деталям и доказательствам.<br>
+                <span class="highlight">Мошенничество:</span> Защита по делам о мошенничестве требует знания гражданского и уголовного права.<br>
+                <span class="highlight">Незаконный оборот наркотических средств:</span> Дела о наркотиках требуют внимания к процессуальным нормам.<br>
+                <span class="highlight">Незаконная организация азартных игр:</span> Защита требует опыта в экономических преступлениях.
             </p>
-        </div>
-        <div class="section">
-            <img src="https://github.com/Vkadivostok/Moskow/blob/main/images/advokat%20viezd.png?raw=true" alt="Срочный выезд адвоката">
+        </section>
+        <section class="section">
+            <img src="https://raw.githubusercontent.com/Vkadivostok/Moskow/main/images/advokat%20viezd.png" alt="Срочный выезд адвоката" onerror="this.src='local-image.jpg';">
             <h2><a href="secondary.html">Срочный выезд адвоката</a></h2>
             <p>Готов оперативно выехать к следователю, в суд или на избрание меры пресечения. Обеспечиваю защиту ваших прав в экстренных ситуациях.</p>
-            <p>
-                <span class="highlight">Выезд к следователю:</span> Я оперативно выезжаю к следователю для защиты ваших прав и интересов на стадии предварительного расследования.
-                <span class="highlight">Выезд в суд:</span> Я обеспечиваю защиту в суде на всех этапах судебного процесса, от первого заседания до апелляции.
-                <span class="highlight">Выезд на избрание меры пресечения:</span> Я защищаю ваши права при избрании меры пресечения, чтобы минимизировать негативные последствия.
-            </p>
-        </div>
-        <div class="section">
-            <img src="https://github.com/Vkadivostok/Moskow/blob/main/images/konsultacia.png?raw=true" alt="Бесплатная консультация">
+        </section>
+        <section class="section">
+            <img src="https://raw.githubusercontent.com/Vkadivostok/Moskow/main/images/konsultacia.png" alt="Бесплатная консультация" onerror="this.src='local-image.jpg';">
             <h2>Бесплатная консультация</h2>
             <p>Получите бесплатную консультацию по вашему вопросу. Заполните форму, и я свяжусь с вами в ближайшее время.</p>
-        </div>
+        </section>
         <div class="form-container">
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="95a43b5a-745b-4a3b-be39-d055b13df101">
@@ -190,34 +169,50 @@
                 <label for="message">Сообщение</label>
                 <textarea name="message" id="message" placeholder="Введите ваше сообщение" rows="5" required></textarea>
                 <div style="display: flex; align-items: center; margin-bottom: 15px;">
-                    <label for="captcha">Введите сумму: 2 + 3 = </label>
+                    <label for="captcha" id="captcha-label">Введите сумму: </label>
                     <input type="text" id="captcha" name="captcha" style="width: 50px;" required>
                 </div>
                 <button type="submit">Отправить</button>
             </form>
             <p id="form-message" style="display: none; color: green;">Сообщение отправлено!</p>
             <script>
+                const num1 = Math.floor(Math.random() * 10);
+                const num2 = Math.floor(Math.random() * 10);
+                document.getElementById('captcha-label').textContent = `Введите сумму: ${num1} + ${num2} = `;
                 document.querySelector('form').addEventListener('submit', function(event) {
                     const captcha = document.getElementById('captcha').value;
-                    if (captcha !== '5') {
+                    if (parseInt(captcha) !== num1 + num2) {
                         alert('Неправильный ответ на капчу!');
-                        event.preventDefault(); // Предотвращаем отправку формы
-                        return false;
+                        event.preventDefault();
+                    } else {
+                        document.getElementById('form-message').style.display = 'block';
                     }
-                    document.getElementById('form-message').style.display = 'block';
                 });
             </script>
         </div>
-        <div class="section">
-            <img src="https://github.com/Vkadivostok/Moskow/blob/main/images/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.png?raw=true" alt="Контакты">
+        <section class="section">
+            <img src="https://raw.githubusercontent.com/Vkadivostok/Moskow/main/images/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.png" alt="Контакты" onerror="this.src='local-image.jpg';">
             <h2>Контакты</h2>
-            <p>Телефон: +7 936 278 26 86</p>
+            <p>Телефон: <a href="tel:+79362782686" aria-label="Позвонить адвокату">+7 936 278 26 86</a></p>
             <p>Email: advokat_kv@mail.ru</p>
             <div id="map" class="map"></div>
-        </div>
+        </section>
+        <section class="section">
+            <h2>Адвокат в Москве: срочный выезд и юридическая помощь</h2>
+            <p>Адвокат Козлов Владимир Михайлович — это профессионал с более чем 15-летним опытом работы в Москве, специализирующийся на уголовных делах, срочном выезде и бесплатных юридических консультациях онлайн. Если вам нужен адвокат в Москве, который оперативно придет на помощь в сложной ситуации, вы нашли подходящего специалиста. Я предлагаю полный спектр юридических услуг, начиная от консультаций по телефону и заканчивая защитой в суде.</p>
+            <p>Уголовный адвокат в Москве — это не просто профессия, а призвание. За годы работы я успешно защитил множество клиентов по делам о кражах, разбоях, мошенничестве, незаконном обороте наркотиков и организации азартных игр. Каждое дело требует глубокого анализа, внимательности к деталям и знания закона. Например, дела о кражах часто связаны с недостаточными доказательствами, и я нахожу слабые места в обвинении, чтобы добиться оправдания или смягчения приговора.</p>
+            <p>Срочный выезд адвоката — одна из ключевых услуг, которую я предоставляю. В Москве, где правовые проблемы могут возникнуть в любой момент, оперативность решает всё. Если вас задержали, вызвали на допрос или проводят обыск, я готов выехать к вам в кратчайшие сроки. Моя задача — защитить ваши права с самого начала, предотвратить ошибки и обеспечить соблюдение закона со стороны правоохранительных органов.</p>
+            <p>Бесплатная юридическая консультация онлайн — это возможность получить помощь без лишних затрат. Вы можете связаться со мной по телефону <a href="tel:+79362782686">+7 936 278 26 86</a> или заполнить форму на сайте, и я отвечу на все ваши вопросы. Часто люди не знают, как действовать в сложной ситуации — я объясняю всё простым языком, рассказываю о ваших правах и рисках, а также предлагаю конкретный план действий.</p>
+            <p>Мои клиенты — это жители Москвы и Московской области, столкнувшиеся с самыми разными проблемами. Уголовные дела — моя основная специализация. Например, дела о мошенничестве требуют анализа финансовых документов и взаимодействия с гражданским правом. Незаконный оборот наркотиков — это работа с экспертизами и процессуальными нормами. Разбои и кражи — детальный разбор обстоятельств и доказательств. Я знаю, как строить защиту, чтобы добиться наилучшего результата.</p>
+            <p>Почему стоит выбрать меня как вашего адвоката в Москве? Во-первых, опыт. За 15 лет я накопил знания и навыки, которые позволяют мне справляться даже с самыми сложными делами. Во-вторых, доступность. Бесплатная консультация — это ваш первый шаг к решению проблемы без финансовых рисков. В-третьих, оперативность. Срочный выезд адвоката в Москве и области — это гарантия того, что вы не останетесь без поддержки в критический момент.</p>
+            <p>Уголовный адвокат нужен не только в суде, но и на стадии следствия. Например, если вас вызвали на допрос, я помогу подготовиться, подскажу, как отвечать на вопросы и чего избегать. При задержании я проверю законность действий полиции и обеспечу вашу защиту. Если речь идет об избрании меры пресечения, я сделаю всё возможное, чтобы вы остались на свободе. Моя цель — минимизировать последствия для вас.</p>
+            <p>Бесплатная юридическая консультация онлайн доступна 24/7. Москва — город, где правовые вопросы могут возникнуть в любое время суток. Я всегда на связи, чтобы помочь вам. Например, если вас обвиняют в краже, я разберу доказательства и найду пути защиты. Если дело связано с наркотиками, я проверю законность экспертиз и действий следствия. Даже в делах об азартных играх я знаю, как защитить ваши интересы.</p>
+            <p>Срочный выезд адвоката в Москве — это не просто услуга, а необходимость. В ситуациях, когда каждая минута на счету, я действую быстро и эффективно. Например, при обыске я слежу за тем, чтобы все действия были законными, а ваши права не нарушались. При избрании меры пресечения я представляю ваши интересы в суде, добиваясь мягкого решения.</p>
+            <p>Если вам нужен уголовный адвокат в Москве, звоните мне прямо сейчас по номеру <a href="tel:+79362782686">+7 936 278 26 86</a>. Бесплатная консультация, срочный выезд, профессиональная защита — всё это я предлагаю своим клиентам. Не откладывайте решение юридических вопросов, ведь своевременная помощь адвоката может изменить исход дела. Доверьтесь мне, и ваши права будут под надежной защитой.</p>
+        </section>
     </div>
     <footer>
-        <p>&copy; 2025 Адвокат Козлов Владимир Михайлович</p>
+        <p>© 2025 Адвокат Козлов Владимир Михайлович</p>
     </footer>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=682f1796-35fb-475b-9578-a0081d2255b2&lang=ru_RU"></script>
     <script>
