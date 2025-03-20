@@ -25,10 +25,18 @@
             padding: 20px;
             text-align: center;
         }
+        header nav {
+            margin-top: 15px;
+        }
         header nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        header nav a:hover {
+            color: #4CAF50;
         }
         .container {
             width: 80%;
@@ -113,12 +121,35 @@
             color: #4CAF50;
             font-weight: bold;
         }
+        a[href^="tel"] {
+            color: #FFD700;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a[href^="tel"]:hover {
+            color: #FFA500;
+        }
+        .email-link {
+            color: #FFD700; /* Золотой цвет для email */
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .email-link:hover {
+            color: #FFA500; /* Оранжевый при наведении, как у телефона */
+        }
+        .contact-info {
+            margin-top: 15px;
+            font-size: 1.1em;
+        }
         @media (max-width: 768px) {
             .container { width: 90%; padding: 10px; }
             .form-container { width: 90%; }
             .section img, .lawyer-photo { max-width: 150px; }
             h2 { font-size: 1.2em; }
-            header nav a { display: block; margin: 10px 0; }
+            header nav a { display: block; margin: 10px 0; font-size: 1em; }
+            .contact-info { font-size: 0.9em; }
         }
     </style>
 </head>
@@ -129,7 +160,13 @@
             <a href="index.html">Главная</a>
             <a href="secondary.html">Срочный выезд</a>
             <a href="consultation.html">Бесплатная консультация</a>
+            <a href="news.html">Новости и статьи</a>
+            <a href="reviews.html">Отзывы</a>
         </nav>
+        <div class="contact-info">
+            <p>Телефон: <a href="tel:+79362782686" aria-label="Позвонить адвокату">+7 936 278 26 86</a></p>
+ 
+        </div>
     </header>
     <div class="container">
         <section class="section">
@@ -175,7 +212,7 @@
                 <button type="submit">Отправить</button>
             </form>
             <p id="form-message" style="display: none; color: green;">Сообщение отправлено!</p>
-            <script>
+            <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
                 const num1 = Math.floor(Math.random() * 10);
                 const num2 = Math.floor(Math.random() * 10);
                 document.getElementById('captcha-label').textContent = `Введите сумму: ${num1} + ${num2} = `;
@@ -194,7 +231,7 @@
             <img src="https://raw.githubusercontent.com/Vkadivostok/Moskow/main/images/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.png" alt="Контакты" onerror="this.src='local-image.jpg';">
             <h2>Контакты</h2>
             <p>Телефон: <a href="tel:+79362782686" aria-label="Позвонить адвокату">+7 936 278 26 86</a></p>
-            <p>Email: advokat_kv@mail.ru</p>
+            <p>Email: <a href="mailto:advokat_kv@mail.ru" class="email-link" style="color: #FFD700;">advokat_kv@mail.ru</a></p>
             <div id="map" class="map"></div>
         </section>
         <section class="section">
@@ -214,6 +251,7 @@
     <footer>
         <p>© 2025 Адвокат Козлов Владимир Михайлович</p>
     </footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=682f1796-35fb-475b-9578-a0081d2255b2&lang=ru_RU"></script>
     <script>
         ymaps.ready(function () {
@@ -232,5 +270,6 @@
             myMap.geoObjects.add(myPlacemark);
         });
     </script>
-</body>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9232f481e993ed83',t:'MTc0MjQ1MDA2OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'923301f6c84abfb8',t:'MTc0MjQ1MDYyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
