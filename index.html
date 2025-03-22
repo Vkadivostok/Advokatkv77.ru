@@ -23,12 +23,24 @@
             line-height: 1.6;
         }
         header {
-            /* Исправлена ссылка на фоновое изображение */
+            position: relative; /* Изменено для корректного позиционирования логотипа */
             background-image: url('https://raw.githubusercontent.com/Vkadivostok/Moskow/main/images/%D0%A8%D0%B0%D0%BF%D0%BA%D0%B0%20%D0%B3%D0%B5%D1%80%D0%B1.jpg');
             background-size: cover;
             background-position: center;
             padding: 20px;
             text-align: center;
+        }
+        .logo-container {
+            position: absolute; /* Новый стиль для логотипа */
+            top: 10px;
+            left: 20px;
+            z-index: 10;
+        }
+        .logo {
+            width: 50px; /* Размеры логотипа */
+            height: 50px;
+            border-radius: 5px;
+            object-fit: contain;
         }
         header nav {
             margin-top: 15px;
@@ -160,6 +172,11 @@
 </head>
 <body>
     <header>
+        <!-- Добавлен контейнер с логотипом -->
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/Vkadivostok/Moskow/main/images/favicon.png" alt="Логотип" class="logo">
+        </div>
+        
         <h1>Адвокат Козлов Владимир Михайлович</h1>
         <nav>
             <a href="index.html">Главная</a>
